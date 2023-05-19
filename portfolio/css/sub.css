@@ -1,0 +1,147 @@
+.kasi1{
+  color: rgb(163, 5, 5);
+  background-color: #ffaeaec6;
+  width: 560px;
+  height: 315px;
+  font-size: 32px;
+  overflow-y: scroll;
+  /*縦方向はスクロール可*/
+  overflow-x: hidden;
+  /*横方向はスクロール不可*/
+  font-size: 1.6em;
+  font-family: serif;
+}
+.kasi2{
+  color: rgb(255, 153, 0);
+  background-color: #f7e9aec6;
+  width: 560px;
+  height: 315px;
+  font-size: 32px;
+  overflow-y: scroll;
+  /*縦方向はスクロール可*/
+  overflow-x: hidden;
+  /*横方向はスクロール不可*/
+  font-size: 1.6em;
+  font-family: serif;
+}
+.kasi-container{
+  display: flex;
+  flex-direction: column;
+}
+.kasi-item1{
+  color: black;
+}
+.kasi-item2{
+  color: black;
+}
+.item{
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1300px){
+  .kasi-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kasi-container .item{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .kasi-item1{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1300px){
+  .kasi-item2{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1300px){
+  .kasi1{
+    top: 16em;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 1300px){
+  .kasi2{
+    top: 16em;
+    left: 0px;
+  }
+}
+.photo-font{
+  color: rgb(163, 100, 5);
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Darumadrop One', cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+}
+.big {
+  width: 90%;
+  height: 300px;
+  font-size: 64px;
+}
+.small {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+}
+.box1 {
+  background: #aead8c;
+  margin: auto;
+  position: relative;
+}
+.box3 {
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  animation: move1 1s infinite;
+}
+@keyframes move1 {
+  0% {
+    top: 80%;
+    left: 80%;
+  }
+  12.5% {
+    top: 40%;
+    left: 50%;
+  }
+  25% {
+    top: 10%;
+    left: 70%;
+  }
+  37.5% {
+    top: 5%;
+    left: 80%;
+  }
+  50% {
+    top: 40%;
+    left: 20%;
+  }
+  62.5% {
+    top: 60%;
+    left: 30%;
+  }
+  75% {
+    top: 50%;
+    left: 68%;
+  }
+  75% {
+    top: 2%;
+    left: 15%;
+  }
+  100% {
+    top: 80%;
+    left: 80%;
+  }
+}
